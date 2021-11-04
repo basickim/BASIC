@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./homepage.css">
+    <style>
+	  *{
+		margin:0;
+	  }
+  	.logo{
+		height:50px;
+		text-align:center;
+		padding-top:30px;
+		background-color:skyblue;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="logo">
+		<a href="#">오징어 경매</a>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="index.html">메인화면</a></li>
+			<li><a href="index.html">계정관리</a></li>
+			<li><a href="index.html">구매하기</a></li>
+			<li><a href="index.html">판매하기</a></li>
+			<li><a href="index.html">문의하기</a></li>
+		<ul>
+	</nav>
+	<aside id="left">
+		<h4>카테고리<h4>
+		<ul>
+			<li><a href="./computer.html" target="iframe1">컴퓨터</a></li>
+			<li><a href="./cloth.html" target="iframe1">의류</a></li>
+			<li><a href="./items.html" target="iframe1">잡화</a></li>
+			<li><a href="./babyproduct.html" target="iframe1">유아용품</a></li>
+			<li><a href="./furniture.html" target="iframe1">가구</a></li>
+			<li><a href="./hobby.html" target="iframe1">취미</a></li>
+			<li><a href="./beauty.html" target="iframe1">뷰티</a></li>
+			<li><a href="./sport.html" target="iframe1">스포츠</a></li>
+			<li><a href="./car.html" target="iframe1">자동차 제품</a></li>
+			<li><a href="./book.html" target="iframe1">도서</a></li>
+			<li><a href="./instrument.html" target="iframe1">악기</a></li>
+			<li><a href="./other.html" target="iframe1">기타용품</a></li>
+		</ul>
+	</aside>
+	<section id="main">
+		<article>
+			<iframe name="iframe1" src="computer.html" frameborder="0" width="900" height="300"></iframe>
+		<article>
+	</section>
+	<aside id="right">
+		<div id="shopcart">
+			<h4>관심상품 목록</h4>
+			현재 관심상품이 없습니다.<br>
+			<a href="./interest.html">관심상품 보기</a>
+		</div>
+
+		<div id="account">
+			<h4><br><br>계정정보<h4>
+			<from action="./login.php" method="POST">
+				<br>계정 : xxxxxx<br>
+				<br>
+				<input type="submit" value="로그아웃">
+				<br>
+
+
+				
+	</aside>
+	<footer>
+		5조 오징어 
+	</footer>
+
+ </body>
+</html>
