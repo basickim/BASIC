@@ -55,31 +55,31 @@
           <a class="nav-link active" aria-current="page" href="#">Popular product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Computer</a>
+          <a class="nav-link" href="#">Beauty</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Cloth</a>
+          <a class="nav-link" href="#">Book</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="#">Car supplies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cloth</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Computer</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Furniture</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Hobby</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Beauty</a>
+            <a class="nav-link" href="#">Musical instrument</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sport</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Car supplies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Book</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">musical instrument</a>
           </li>
       </ul>
       <hr/>
@@ -153,35 +153,130 @@
     <div class="container my-5">
         <div class="row my-5">
             <form>
+                
+
+               
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="Title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="inputTitle">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Product description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                   </div>
-                  <div>
-                  <button type="submit" class="btn btn-secondary">Duplicate check</button>
                 </div>
-                <div class="mt-3 mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class=row>
+                <div class="col-md-4">
+                  <label for="inputZip" class="form-label">Starting price</label>
+                  <input type="text" class="form-control" id="inputDay" placeholder="Unit=₩">
                 </div>
-                <div class="mb-3">
-                    <label for="inputPhonenumber" class="form-label">Phonenumber</label>
-                    <input type="text" class="form-control" id="inputPhonenumber" >
-                  </div>
-                <div class="mb-3">
-                    <label for="inputUsername" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="inputUsername">
+                
+                <div class="col-md-4">
+                 <label for="inputZip" class="form-label">Immediate purchase price</label>
+                 <input type="text" class="form-control" id="inputDay" placeholder="Unit=₩">
                 </div>
-                <div class="mb-3">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress">
+
+                <div class="col-md-4">
+                    
+                      <label for="inputyear" class="form-label ">Category</label>
+                      <select id="inputyear" class="form-select">
+                        <option selected>Beauty</option>
+                        <option>Book</option>
+                        <option>Car supplies</option>
+                        <option>Cloth</option>
+                        <option>Computer</option>
+                        <option>Furniture</option>
+                        <option>Hobby</option>
+                        <option>Musical instrument</option>
+                        <option>Sport</option>
+                      </select>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-secondary">Sign up</button>
-            
+
+                <div class="row g-3">
+                
+                </div>
+                
               </form>
         </div>
     </div>
+    <div class="container ">
+    <form class="row g-3 ">
+        <div class="col-md-4">
+        
+        <label class="">  Due date </label>
+          <label for="inputyear" class="form-label "></label>
+          <select id="inputyear" class="form-select">
+            <option selected>Year</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+            <label class="p-2">   </label>
+          <label for="inputState" class="form-label"></label>
+          <select id="inputState" class="form-select">
+            <option selected>Month</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputZip" class="form-label"></label>
+          <input type="text" class="form-control" id="inputDay" placeholder="Day">
+        </div>
+    </form>
+
+      
+    <form class="row">
+        <div class="mt-3 mb-3">
+            <label for="formFileMultiple" class="form-label">File upload</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+          <fieldset class="row mb-3">
+              
+            <legend class="col-form-label col-sm-2 pt-0">Mode</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Sell
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Buy
+                </label>
+              </div>
+        </div>
+    </fieldset>
+    </form>
+    <div class="row">
+        <div class="col-12">
+          <button type="submit" class="btn  btn-secondary">Registration</button>
+        </div>
+  
+
+      </div>
+    </div>
+  
       <div>
+
           <hr/>
           <center><p> Team squid </p></center>
       </div>
