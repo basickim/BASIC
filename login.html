@@ -33,12 +33,13 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Buy</a></li>
                   <li><a class="dropdown-item" href="#">Sell</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Log out</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Ask</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log out</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -48,107 +49,7 @@
           </div>
         </div>
       </nav>
-      <!--카테고리-->
-      <!--<hr/>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Popular product</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Computer</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Cloth</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Furniture</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Hobby</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Beauty</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sport</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Car supplies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Book</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">musical instrument</a>
-          </li>
-      </ul>
-      <hr/>
      
-      <div calss="container">
-      <div class="row mx-3">
-          <div class="col-md-4 mt-4">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Auction</a>
-                </div>
-              </div>
-          </div>
-          <div class="col-md-4 mt-4">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Auction</a>
-                </div>
-              </div>
-          </div>
-          <div class="col-md-4 mt-4">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Auction</a>
-                </div>
-              </div>
-          </div>
-          <div class="col-md-4 mt-4">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Auction</a>
-                </div>
-              </div>
-          </div>
-          <div class="col-md-4 mt-4">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Auction</a>
-                </div>
-              </div>
-          </div>
-          <div class="col-md-4 mt-4">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Auction</a>
-                </div>
-              </div>
-          </div>
-      </div>
-    </div>-->
-    <!--footer-->
     <hr/>
     <div class="container my-5">
         <div class="row my-5">
@@ -162,9 +63,94 @@
                   <label for="exampleInputPassword1" class="form-label">Password</label>
                   <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-secondary">Login</button>
-                <button type="submit" class="btn btn-secondary">join membership</button>
-                <button type="submit" class="btn btn-secondary">Help</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModa1">
+                  Log in
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModa1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Do you want to Log in?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="#"><button type="button" class="btn btn-secondary">Log in</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                  Join membership
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Do you want to Join membership?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="#"><button type="button" class="btn btn-secondary">Cancel</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModa3">
+                  Help
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Do you want to Help?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="#"><button type="button" class="btn btn-secondary">Help</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModa4">
+                  Cancel
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Do you want to cancel?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="#"><button type="button" class="btn btn-secondary">Cancel</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </form>
         </div>
     </div>
