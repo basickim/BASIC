@@ -5,6 +5,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
+app.get('/product', (req, res) => {
+  res.sendFile(__dirname + "/public/product.html");
+});
+
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!');
 });
